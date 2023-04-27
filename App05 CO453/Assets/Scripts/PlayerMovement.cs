@@ -48,6 +48,9 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        // Double Jumping 
+        //
+
         if (Input.GetKeyDown("w"))   
         {
             if(IsGrounded() || doubleJump)
