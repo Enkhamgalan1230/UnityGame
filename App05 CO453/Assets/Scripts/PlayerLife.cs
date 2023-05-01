@@ -24,6 +24,11 @@ public class PlayerLife : MonoBehaviour
         {
             Die();
         }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Die();
+        }
+
     }
     
     private void Die()

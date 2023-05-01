@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Banana
   - Trap
+  - Enemy
   layers:
   - Default
   - TransparentFX
