@@ -10,6 +10,8 @@ public class ItemCollector : MonoBehaviour
 
     [SerializeField] private AudioSource collectionSoundEffect;
 
+
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Banana"))
