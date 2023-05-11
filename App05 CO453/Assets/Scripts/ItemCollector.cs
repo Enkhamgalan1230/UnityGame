@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    public int bananas = 0;
+    public static int bananas;
     [SerializeField] private Text bananaText;
 
     [SerializeField] private AudioSource collectionSoundEffect;
 
-
+    void Start()
+    {
+        bananas = 0;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
