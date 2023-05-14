@@ -7,6 +7,7 @@ public class MoveDumbbell : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     [SerializeField] private float jumpForce = 8f;
+    [SerializeField] private LayerMask jumpableGround;
 
 
     private void Start()
@@ -21,8 +22,10 @@ public class MoveDumbbell : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0);
-           
+
+
 
         }
 
