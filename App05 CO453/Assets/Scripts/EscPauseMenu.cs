@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EscPauseMenu : MonoBehaviour
 {
@@ -51,5 +52,13 @@ public class EscPauseMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void NextLvl()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        pauseMenuReal.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 }
